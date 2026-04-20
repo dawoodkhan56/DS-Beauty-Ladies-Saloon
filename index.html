@@ -19,31 +19,31 @@
            ========================================================================== */
         :root {
             /* Light Theme (Pastel, Nude, Gold) */
-            --primary-color: #e8b4b8; /* Soft Pink */
+            --primary-color: #ff00d4f5; /* Soft Pink */
             --secondary-color: #f4d8d8; /* Nude/Peach */
-            --accent-gold: #d4af37;
+            --accent-gold: #ffd448;
             --accent-gold-light: #f3e5ab;
-            --bg-color: #f8c9c9;
+            --bg-color: #ff00d4f5;
             --surface-color: #ffffff;
             --text-dark: #000000;
             --text-light: #000000;
-            --glass-bg: rgba(245, 7, 7, 0.9);
-            --glass-border: rgb(255, 0, 170);
+            --glass-bg: rgba(255, 0, 149, 0.767);
+            --glass-border: rgb(0, 0, 0);
             --glass-shadow: 0 8px 32px 0 rgba(232, 180, 184, 0.15);
             --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
 
         /* Dark Theme overrides */
         body.dark-mode {
-            --primary-color: #c98a8e;
+            --primary-color: #f500c0;
             --secondary-color: #3a2b2c;
-            --accent-gold: #e6c55d;
-            --bg-color: #121011;
+            --accent-gold: #ffd448;
+            --bg-color: #ff00d4;
             --surface-color: #1e1a1b;
             --text-dark: #ffffff;
             --text-light: #ffffff;
-            --glass-bg: rgba(30, 26, 27, 0.7);
-            --glass-border: rgba(255, 255, 255, 0.993);
+            --glass-bg: rgb(0, 0, 0);
+            --glass-border: rgba(255, 196, 0, 0.993);
             --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
         }
 
@@ -449,11 +449,11 @@
         .form-group { width: 100%; }
         .form-control {
             width: 100%; padding: 15px 20px; border-radius: 10px;
-            border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.08);
-            color: #fff; font-family: 'Poppins', sans-serif; outline: none; transition: var(--transition);
+            border: 1px solid rgba(255, 0, 0, 0.2); background: rgba(255, 0, 0, 0.08);
+            color: #ffffff; font-family: 'Poppins', sans-serif; outline: none; transition: var(--transition);
         }
-        .form-control::placeholder { color: rgba(255, 255, 255, 0.6); }
-        .form-control:focus { background: rgb(255, 255, 255); border-color: var(--accent-gold); box-shadow: 0 0 15px rgba(212, 175, 55, 0.2); }
+        .form-control::placeholder { color: rgb(255, 255, 255); }
+        .form-control:focus { background: rgba(0, 0, 0, 0); border-color: var(--accent-gold); box-shadow: 0 0 15px rgba(212, 175, 55, 0.2); }
         select.form-control option { background: var(--surface-color); color: var(--text-dark); }
         
         /* Date & Time Picker Icon colors override for some browsers */
@@ -543,7 +543,7 @@
         /* Mobile */
         @media (max-width: 768px) {
             .nav-links {
-                position: fixed; top: 0; right: -100%; width: 100%; height: 100vh;
+                position: fixed; top: 0; right: -100%; width: 75%; height: 100vh;
                 background: var(--surface-color); flex-direction: column; justify-content: center; align-items: center;
                 transition: var(--transition); box-shadow: -10px 0 30px rgba(0,0,0,0.1);
             }
